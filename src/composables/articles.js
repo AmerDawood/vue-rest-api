@@ -20,7 +20,7 @@ export default function useArticles(){
 
     const getArticle = async (id) => {
         const response = await axios.get("articles/" + id);
-        skill.value = response.data.data;
+        articles.value = response.data.data;
     
       };
 
@@ -45,6 +45,9 @@ export default function useArticles(){
       await router.push({ name: "ArticleIndex" });
     } catch (error) {
       if (error.response.status === 422) {
+       
+ 
+          
         errors.value = error.response.data.errors;
       }
     }

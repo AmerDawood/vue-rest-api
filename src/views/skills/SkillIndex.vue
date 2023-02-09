@@ -28,7 +28,7 @@ onMounted(() => getSkills());
           "
         >
           <tr>
-            <th scope="col" class="py-3 px-6">#</th>
+            <th scope="col" class="py-3 px-6">#id</th>
             <th scope="col" class="py-3 px-6">Name</th>
             <th scope="col" class="py-3 px-6">Slug</th>
             <th scope="col" class="py-3 px-6">Action</th>

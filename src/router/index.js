@@ -50,6 +50,7 @@ const router = createRouter({
       path: "/articles/:id/edit",
       name: "ArticleEdit",
       component: () => import("../views/articles/ArticleEdit.vue"),
+      props: true,
     },
 
   ],

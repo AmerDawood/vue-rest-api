@@ -37,6 +37,7 @@ onMounted(() => getArticles());
             <th scope="col" class="py-3 px-6">#</th>
             <th scope="col" class="py-3 px-6">Title</th>
             <th scope="col" class="py-3 px-6">Description</th>
+            <th scope="col" class="py-3 px-6">Created At</th>
             <th scope="col" class="py-3 px-6">Action</th>
           </tr>
         </thead>
@@ -50,6 +51,8 @@ onMounted(() => getArticles());
 
             <td class="py-4 px-6">{{ article.title }}</td>
             <td class="py-4 px-6">{{ article.description }}</td>
+            <td class="py-4 px-6">{{ article.created_at }}</td>
+
             <td class="py-4 px-6 space-x-2">
               <RouterLink
                 :to="{ name: 'ArticleEdit', params: { id: article.id } }"
